@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet Móvil Claro - Instalación</title>
+<meta name="description" content="Servicio de configuración e instalación de conexión móvil mediante Focus VPN.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6f9;color:#17202a}
+.container{max-width:520px;margin:auto;padding:18px}
+.card{background:white;border-radius:22px;padding:24px;box-shadow:0 8px 28px rgba(0,0,0,.10);margin-top:18px}
+h1{font-size:30px;margin:5px 0 10px;text-align:center}
+h2{font-size:20px}
+.sub{text-align:center;color:#59636e;line-height:1.5}
+.price{font-size:38px;font-weight:800;text-align:center;margin:18px 0 4px}
+.price small{font-size:15px;font-weight:normal;color:#666}
+.badge{display:block;width:max-content;margin:12px auto;padding:7px 12px;border-radius:999px;background:#e8f5e9;color:#187a35;font-weight:bold}
+ul{padding-left:22px;line-height:1.8}
+.btn{display:block;text-decoration:none;text-align:center;padding:15px;border-radius:14px;margin-top:12px;font-weight:bold;font-size:17px}
+.whatsapp{background:#25D366;color:white}
+.share{background:#17202a;color:white}
+.install{background:#e9eef3;color:#17202a}
+.note{font-size:13px;color:#69737d;line-height:1.5;margin-top:18px}
+.footer{text-align:center;font-size:12px;color:#7a838b;margin:20px 0}
+.edit{background:#fff8e1;border-left:5px solid #f0b400;padding:12px;border-radius:10px;font-size:13px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <span class="badge">📱 CONFIGURACIÓN MÓVIL</span>
+    <h1>Internet móvil para tu celular</h1>
+    <p class="sub">Servicio de instalación y configuración de conexión mediante una aplicación VPN.</p>
+
+    <div class="price">$50.000 <small>COP · pago por instalación</small></div>
+
+    <ul>
+      <li>Instalación y configuración en tu celular.</li>
+      <li>Configuración para uso con red móvil Claro.</li>
+      <li>Te ayudamos a dejar la aplicación configurada.</li>
+      <li>Compatible con Android, sujeto a las condiciones de la red y del servicio.</li>
+    </ul>
+
+    <a class="btn whatsapp" href="https://wa.me/573104455113?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20instalaci%C3%B3n%20de%20internet%20m%C3%B3vil." target="_blank">
+      💬 Pedir instalación por WhatsApp
+    </a>
+
+    <a class="btn install" href="https://play.google.com/store/apps/details?id=com.cloud.focus" target="_blank">
+      ▶️ Ver Focus VPN en Google Play
+    </a>
+
+    <button class="btn share" onclick="compartir()">📤 Compartir esta página</button>
+
+    <div class="note">
+      <strong>Importante:</strong> la disponibilidad, velocidad y duración de la conexión dependen de la cobertura,
+      condiciones de la red móvil, configuración del equipo y funcionamiento de la aplicación. No se garantiza
+      acceso ilimitado si la red, el operador o la aplicación no lo permiten.
+    </div>
+
+    <div class="edit">
+      <strong>PARA EDITAR:</strong> cambia el precio, número de WhatsApp, textos y enlaces directamente en este archivo.
+      Busca las palabras <b>$50.000</b> y <b>3104455113</b>.
+    </div>
+  </div>
+
+  <div class="footer">
+    Servicio independiente de configuración. No representa oficialmente a Claro ni a Focus VPN.
+  </div>
+</div>
+
+<script>
+function compartir(){
+  if(navigator.share){
+    navigator.share({
+      title:'Internet móvil - Instalación',
+      text:'Información sobre instalación y configuración de internet móvil.',
+      url:window.location.href
+    });
+  }else{
+    navigator.clipboard.writeText(window.location.href).then(()=>{
+      alert('Enlace copiado. Ahora puedes pegarlo en WhatsApp o Facebook.');
+    });
+  }
+}
+</script>
+</body>
+</html>
